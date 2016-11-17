@@ -9,15 +9,15 @@ import org.eclipse.jface.dialogs.MessageDialog;
 
 /**
 *
-* KnowledgeBase.java
+* SampleHandler.java
 *
-* Copyright (C) The Research Foundation of SUNY, 2015
+* Copyright (C) The University of Bridgeport, 2016
 * All rights reserved.
 *
 * This software may be modified and distributed under the terms
 * of the BSD license.  See the LICENSE file for details.
 *
-* Created on: October 20th, 2011 
+* Created on: November 17th, 2016 
 * @author rbasseda
 *  
 * 

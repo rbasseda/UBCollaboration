@@ -33,6 +33,8 @@ public class SampleHandler extends AbstractHandler {
 	@Override
 	public Object execute(ExecutionEvent event) throws ExecutionException {
 		IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindowChecked(event);
+		
+		//TODO: You have to complete this code
 		MessageDialog.openInformation(
 				window.getShell(),
 				"UBCollaboration",

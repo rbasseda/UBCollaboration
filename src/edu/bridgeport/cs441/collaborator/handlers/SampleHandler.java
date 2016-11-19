@@ -35,6 +35,7 @@ public class SampleHandler extends AbstractHandler {
 		IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindowChecked(event);
 		
 		//TODO: You have to complete this code
+		
 		MessageDialog.openInformation(
 				window.getShell(),
 				"UBCollaboration",

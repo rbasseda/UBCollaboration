@@ -4,7 +4,7 @@
 package edu.bridgeport.cs441.collaborator.exceptions;
 
 /**
- * @author rbass
+ * @author Reza Basseda
  *
  */
 public class ServerNotFoundException extends RuntimeException {

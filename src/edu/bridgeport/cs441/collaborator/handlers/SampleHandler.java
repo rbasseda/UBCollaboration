@@ -18,7 +18,7 @@ import org.eclipse.jface.dialogs.MessageDialog;
 * of the BSD license.  See the LICENSE file for details.
 *
 * Created on: November 17th, 2016 
-* @author rbasseda
+* @author Reza Basseda
 *  
 * 
 */

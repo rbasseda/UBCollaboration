@@ -39,7 +39,7 @@ public class SampleHandler extends AbstractHandler {
 		
 		MessageDialog.openInformation(
 				window.getShell(),
-				"UBCollaboration",
+				"UBCollaboration: Course project of CS441",
 				"Write the code here");
 		return null;
 	}

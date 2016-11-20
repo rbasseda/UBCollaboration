@@ -1,7 +1,7 @@
-package edu.bridgeport.cs441.collaborator.handlers;
+package edu.bridgeport.cs441.collaborator.developermanagement.handlers;
 /**
 *
-* SampleHandler.java
+* AddUserHandler.java
 *
 * Copyright (C) The University of Bridgeport, 2016
 * All rights reserved.
@@ -32,7 +32,7 @@ import org.eclipse.jface.dialogs.MessageDialog;
  * @see org.eclipse.core.commands.IHandler
  * @see org.eclipse.core.commands.AbstractHandler
  */
-public class SampleHandler extends AbstractHandler {
+public class AddDeveloperHandler extends AbstractHandler {
 
 	@Override
 	public Object execute(ExecutionEvent event) throws ExecutionException {
@@ -44,7 +44,7 @@ public class SampleHandler extends AbstractHandler {
 		MessageDialog.openInformation(
 				window.getShell(),
 				"UBCollaboration: Course project of CS441",
-				"Write the code here");
+				"Write add user code here");
 		return null;
 	}
 }

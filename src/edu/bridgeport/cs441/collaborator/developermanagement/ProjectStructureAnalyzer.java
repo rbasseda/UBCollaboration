@@ -20,7 +20,7 @@ package edu.bridgeport.cs441.collaborator.developermanagement;
 public class ProjectStructureAnalyzer {
 	
 	/*
-	 * TESTING COMMIT. tesT?
+	 * TESTING COMMIT. tesT? test?
 	 */
 	
 	

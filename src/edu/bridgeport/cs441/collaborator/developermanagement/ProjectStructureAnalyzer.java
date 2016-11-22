@@ -12,9 +12,16 @@
 package edu.bridgeport.cs441.collaborator.developermanagement;
 
 /**
+ * ProjectStructureAnalyzer provides analytics for the structure of the collaborative project.
+ * 
  * @author Peter Yasutake
  *
  */
 public class ProjectStructureAnalyzer {
-
+	
+	/*
+	 * TESTING COMMIT.
+	 */
+	
+	
 }

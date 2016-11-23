@@ -22,10 +22,4 @@ import org.eclipse.jdt.core.*;
 public class ProjectStructureAnalyzer {
 	
 	
-	
-	/*
-	 * TESTING COMMIT. tesT? test? test?
-	 */
-	
-	
 }

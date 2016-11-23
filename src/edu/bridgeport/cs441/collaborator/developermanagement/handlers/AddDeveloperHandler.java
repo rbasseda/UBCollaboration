@@ -50,7 +50,6 @@ public class AddDeveloperHandler extends AbstractHandler {
 	
 	
 	
-	//TEST CHANGE BY PETER
 	
 	
 }

@@ -11,6 +11,8 @@
  */
 package edu.bridgeport.cs441.collaborator.developermanagement;
 
+import org.eclipse.jdt.core.*;
+
 /**
  * ProjectStructureAnalyzer provides analytics for the structure of the collaborative project.
  * 
@@ -19,8 +21,10 @@ package edu.bridgeport.cs441.collaborator.developermanagement;
  */
 public class ProjectStructureAnalyzer {
 	
+	
+	
 	/*
-	 * TESTING COMMIT. tesT?
+	 * TESTING COMMIT. tesT? test?
 	 */
 	
 	

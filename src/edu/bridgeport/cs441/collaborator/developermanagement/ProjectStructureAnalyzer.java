@@ -11,7 +11,11 @@
  */
 package edu.bridgeport.cs441.collaborator.developermanagement;
 
-import org.eclipse.jdt.core.*;
+import org.eclipse.core.resources.IProject;
+import org.eclipse.core.resources.IResource;
+import org.eclipse.core.resources.IWorkspaceRoot;
+import org.eclipse.core.resources.ResourcesPlugin;
+import org.eclipse.core.runtime.CoreException;
 
 /**
  * ProjectStructureAnalyzer provides analytics for the structure of the collaborative project.
@@ -21,5 +25,36 @@ import org.eclipse.jdt.core.*;
  */
 public class ProjectStructureAnalyzer {
 	
+	
+	private IWorkspaceRoot workspaceRoot;
+
+	
+	public ProjectStructureAnalyzer() {
+		
+		workspaceRoot = ResourcesPlugin.getWorkspace().getRoot();
+	}
+	
+	
+	public String displayProjectTree(IProject printProject) throws CoreException{
+		String displayTree = "";
+		
+		displayTree += "-" + printProject.getName() + "\n";
+		for (IResource contents : printProject.members()){
+			displayTree += "---" + contents.getName() + "\n";
+		}
+		
+		return displayTree;
+	}
+	
+	public String displayWorkplaceTree() throws CoreException{
+		String displayWorkplace = "";
+		
+		displayWorkplace += "Workplace:\n";
+		for (IProject contents : workspaceRoot.getProjects()){
+			displayWorkplace += this.displayProjectTree(contents) + "\n";
+		}
+		
+		return displayWorkplace;
+	}
 	
 }

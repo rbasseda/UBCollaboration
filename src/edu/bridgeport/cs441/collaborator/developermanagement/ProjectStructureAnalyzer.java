@@ -24,7 +24,7 @@ public class ProjectStructureAnalyzer {
 	
 	
 	/*
-	 * TESTING COMMIT. tesT? test?
+	 * TESTING COMMIT. tesT? test? test?
 	 */
 	
 	

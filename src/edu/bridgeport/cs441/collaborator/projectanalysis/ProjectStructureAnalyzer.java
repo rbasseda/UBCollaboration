@@ -9,13 +9,15 @@
  * 
  * Created on: Nov 22, 2016
  */
-package edu.bridgeport.cs441.collaborator.developermanagement;
+package edu.bridgeport.cs441.collaborator.projectanalysis;
 
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.IWorkspaceRoot;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.ui.IWorkbench;
+import org.eclipse.ui.PlatformUI;
 
 /**
  * ProjectStructureAnalyzer provides analytics for the structure of the collaborative project.
@@ -27,23 +29,13 @@ public class ProjectStructureAnalyzer {
 	
 	
 	private IWorkspaceRoot workspaceRoot;
+	private IWorkbench workbench;
 
 	
 	public ProjectStructureAnalyzer() {
 		
+		workbench = PlatformUI.getWorkbench();
 		workspaceRoot = ResourcesPlugin.getWorkspace().getRoot();
-	}
-	
-	
-	public String displayProjectTree(IProject printProject) throws CoreException{
-		String displayTree = "";
-		
-		displayTree += "-" + printProject.getName() + "\n";
-		for (IResource contents : printProject.members()){
-			displayTree += "---" + contents.getName() + "\n";
-		}
-		
-		return displayTree;
 	}
 	
 	public String displayWorkplaceTree() throws CoreException{
@@ -56,5 +48,17 @@ public class ProjectStructureAnalyzer {
 		
 		return displayWorkplace;
 	}
+	
+	public String displayProjectTree(IProject printProject) throws CoreException{
+		String displayTree = "";
+		
+		displayTree += "-" + printProject.getName() + "\n";
+		for (IResource contents : printProject.members()){
+			displayTree += "---" + contents.getName() + "\n";
+		}
+		
+		return displayTree;
+	}
+
 	
 }

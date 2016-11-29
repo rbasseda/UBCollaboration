@@ -33,6 +33,15 @@
                id="edu.bridgeport.cs441.collaborator.commands.collaborate.leaveDiscussion">
          </command>
       </category>
+      <category
+            id="edu.bridgeport.cs441.collaborator.commands.category.projectanalysis"
+            name="Project Analysis">
+         <command
+               categoryId="edu.bridgeport.cs441.collaborator.commands.category.projectanalysis"
+               id="edu.bridgeport.cs441.collaborator.commands.category.projectanalysis.testAnalysis"
+               name="Test Project Analysis">
+         </command>
+      </category>
    </extension>
    <extension
          point="org.eclipse.ui.handlers">
@@ -51,6 +60,10 @@
       <handler
             class="edu.bridgeport.cs441.collaborator.collaborate.handlers.LeaveDiscussionHandler"
             commandId="edu.bridgeport.cs441.collaborator.commands.collaborate.leaveDiscussion">
+      </handler>
+      <handler
+            class="edu.bridgeport.cs441.collaborator.projectanalysis.handlers.ProjectStructureTesterHandler"
+            commandId="edu.bridgeport.cs441.collaborator.commands.category.projectanalysis.testAnalysis">
       </handler>
    </extension>
    <extension
@@ -107,6 +120,18 @@
                      tooltip="Leave the ongoing discussion in the team."
                      mnemonic="S">
                </command>               
+            </menu>
+            <menu
+                  id="edu.bridgeport.cs441.collaborator.menus.projectanalysis"
+                  label="Project Analysis"
+                  mnemonic="M">
+               <command
+                     commandId="edu.bridgeport.cs441.collaborator.commands.category.projectanalysis.testAnalysis"
+                     id="edu.bridgeport.cs441.collaborator.menus.projectanalysis.testAnalysis"
+                     label="Test Project Analysis"
+                     mnemonic="S"
+                     tooltip="Test the project analysis.">
+               </command>
             </menu>
          </menu>
       </menuContribution>

@@ -7,10 +7,10 @@
          point="org.eclipse.ui.commands">
          <category
             name="Bugs Reporting"
-            id="edu.bridgeport.cs441.collaborator.commands.category.bugsreports">
+            id="edu.bridgeport.cs441.collaborator.commands.category.bugsreport">
          <command
                name="Bug Report"
-               categoryId="edu.bridgeport.cs441.collaborator.commands.category.bugsreports"
+               categoryId="edu.bridgeport.cs441.collaborator.commands.category.bugsreport"
                id="edu.bridgeport.cs441.collaborator.commands.bugsreport.BugsReporter">
          </command>
 
@@ -58,7 +58,7 @@
          point="org.eclipse.ui.handlers">
       <handler
             commandId="edu.bridgeport.cs441.collaborator.commands.bugsreport.BugsReporter"
-            class="edu.bridgeport.cs441.collaborator.bugsreport.BugsReporter">
+            class="edu.bridgeport.cs441.collaborator.bugsreport.handlers.BugsReportHandler">
       </handler>
       <handler
             commandId="edu.bridgeport.cs441.collaborator.commands.developerManagement.addDeveloper"
@@ -152,12 +152,12 @@
                <menu
                   id="edu.bridgeport.cs441.collaborator.menus.bugreports"
                   label="Bugs Report"
-                  mnemonic="M">
+                  mnemonic="B">
                <command
-                     commandId="edu.bridgeport.cs441.collaborator.commands.category.bugsreports.BugsReporter"
+                     commandId="edu.bridgeport.cs441.collaborator.commands.bugsreport.BugsReporter"
                      id="edu.bridgeport.cs441.collaborator.menus.bugreports.BugsReporter"
                      label="Test Bugs Report"
-                     mnemonic="S"
+                     mnemonic="B"
                      tooltip="Test the Bugs Report.">
                </command>
             </menu>

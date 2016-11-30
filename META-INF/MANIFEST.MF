@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Advanced SE Collaboration and Code Analysis
+Bundle-Name: %Bundle-Name
 Bundle-SymbolicName: edu.bridgeport.cs441.collaborator;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: ubcollaboration.Activator
-Bundle-Vendor: University of Bridgeport
+Bundle-Vendor: %Bundle-Vendor
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8

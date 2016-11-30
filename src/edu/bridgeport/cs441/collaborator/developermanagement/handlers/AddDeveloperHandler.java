@@ -44,7 +44,7 @@ public class AddDeveloperHandler extends AbstractHandler {
 		MessageDialog.openInformation(
 				window.getShell(),
 				"UBCollaboration: Course project of CS441",
-				"Write add user code here");
+				"Write add user code here____");
 		return null;
 	}
 	

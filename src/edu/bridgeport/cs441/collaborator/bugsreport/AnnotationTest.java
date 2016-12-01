@@ -38,8 +38,8 @@ public class AnnotationTest
     @MyAnnotation(author="aelsaka",date="22/10/2011",bug="AnotherBug")
     public String testAnnotation()
     {
-
+ 
         return "some Annotations";
-    }
+    } 
 
 }

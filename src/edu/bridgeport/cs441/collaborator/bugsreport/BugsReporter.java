@@ -65,7 +65,7 @@ public class BugsReporter  {
 	            if(project.isOpen() && project.hasNature(JavaCore.NATURE_ID)) {
 	               projectList.add(JavaCore.create(project));
 	            }
-	         }
+	         } 
 	      }
 	      catch(CoreException ce) {
 	         ce.printStackTrace();
@@ -96,7 +96,7 @@ public class BugsReporter  {
 		return displayWorkplace;
 	}
 	
-	
+	 
 	public static String getJavaProjectsTest() throws CoreException{
 	    
 	//	IWorkspaceRoot workspaceRoot = ResourcesPlugin.getWorkspace().getRoot();

@@ -27,7 +27,7 @@ import org.eclipse.ui.handlers.HandlerUtil;
 
 /**
  * @author Alaa Elsaka
- *
+ * 
  */
 public class BugsReportHandler extends AbstractHandler {
 
@@ -46,6 +46,7 @@ public class BugsReportHandler extends AbstractHandler {
 				window.getShell(),
 				"Project Analysis: Testing Project Analysis",
 				br.getAnnotations());
+		
 		
 	/*	MessageDialog.openInformation(
 				window.getShell(),

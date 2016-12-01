@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <!-- Authors: Reza Basseda, ... -->
 <plugin>
-
+ 
    <extension
          point="org.eclipse.ui.commands">
          <category
@@ -101,7 +101,7 @@
             <menu
                   id="edu.bridgeport.cs441.collaborator.menus.developerManagement"
                   label="Developer Management"
-                  mnemonic="M">
+                  mnemonic="M"> 
                <command
                      commandId="edu.bridgeport.cs441.collaborator.commands.developerManagement.addDeveloper"
                      id="edu.bridgeport.cs441.collaborator.menus.developerManagement.addDeveloper"

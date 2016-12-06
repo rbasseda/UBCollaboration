@@ -36,15 +36,16 @@ public class LoginPage extends Dialog {
 	
 	@Override
     protected Control createDialogArea(Composite parent) {
-            Composite container = (Composite) super.createDialogArea(parent);
+        parent.getShell().setText("UBCollaboration: LoginPortal");   
+		Composite container = (Composite) super.createDialogArea(parent);
             GridLayout layout = new GridLayout(2, false);
             layout.marginRight = 5;
             layout.marginLeft = 10;
             container.setLayout(layout);
-
+            //Label User
             Label lblUser = new Label(container, SWT.NONE);
             lblUser.setText("User:");
-
+            //Username input
             UserIDTxt = new Text(container, SWT.BORDER);
             UserIDTxt.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false,
                             1, 1));

@@ -37,7 +37,17 @@ public class JoinDiscussionHandler extends AbstractHandler{
 	public Object execute(ExecutionEvent event) throws ExecutionException{
 		Shell shell = HandlerUtil.getActiveShellChecked(event);
 		LoginPage login = new LoginPage(shell);
-		login.open();
+		
+		 if (login.open() == Window.OK) {
+			 
+			 //when clicked OK check the authentication
+			 
+			 //If failure display wrong username password
+			 
+			 //If success start chat
+			 
+			 
+		 }
 		return null;
 	}
 

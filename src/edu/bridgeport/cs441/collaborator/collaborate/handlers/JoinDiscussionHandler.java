@@ -14,43 +14,31 @@ package edu.bridgeport.cs441.collaborator.collaborate.handlers;
 import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.jface.action.IAction;
+import org.eclipse.jface.dialogs.InputDialog;
 import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.ui.IWorkbenchWindow;
+import org.eclipse.ui.IWorkbenchWindowActionDelegate;
 import org.eclipse.ui.handlers.HandlerUtil;
 import org.eclipse.jface.window.Window;
 
+
 /**
- * @author Reza Basseda
+ * @author Reza Basseda, Subha Bir Mathema, Jay Sheth
  *
  */
-public class JoinDiscussionHandler{
+public class JoinDiscussionHandler extends AbstractHandler{
 		
 	/* (non-Javadoc)
 	 * @see org.eclipse.core.commands.IHandler#execute(org.eclipse.core.commands.ExecutionEvent)
 	 */
-	
-	
-	public void execute(ExecutionEvent event) throws ExecutionException{
-		IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindowChecked(event);
-		LoginPage login = new LoginPage(window.getShell());
-		// TODO Auto-generated method stub
-		
-		
-		if (login.open() == Window.OK) {
-            String user = login.getUser();
-            String pw = login.getPassword();
-            System.out.println(user);
-            System.out.println(pw);
-            
-            
-    }
-		
-		/*MessageDialog.openInformation(
-				window.getShell(),
-				"UBCollaboration: Login Portal",
-				"Write join discussion code here");
-		return null;*/
+	public Object execute(ExecutionEvent event) throws ExecutionException{
+		Shell shell = HandlerUtil.getActiveShellChecked(event);
+		LoginPage login = new LoginPage(shell);
+		login.open();
+		return null;
 	}
 
 }

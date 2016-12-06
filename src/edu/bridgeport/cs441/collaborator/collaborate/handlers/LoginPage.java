@@ -15,6 +15,11 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 
+/**
+ * @author Subha Bir Mathema, Jay Sheth
+ *
+ */
+
 public class LoginPage extends Dialog {
 
 	private Text UserIDTxt;

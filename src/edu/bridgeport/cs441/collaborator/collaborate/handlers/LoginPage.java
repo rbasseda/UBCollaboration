@@ -94,7 +94,7 @@ public class LoginPage extends Dialog {
 
     @Override
     protected Point getInitialSize() {
-            return new Point(450, 300);
+            return new Point(375, 175);
     }
 
     @Override

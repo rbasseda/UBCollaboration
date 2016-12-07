@@ -11,6 +11,7 @@
  */
 package edu.bridgeport.cs441.collaborator.collaborate.handlers;
 
+import java.sql.*;
 import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
@@ -38,7 +39,17 @@ public class JoinDiscussionHandler extends AbstractHandler{
 		Shell shell = HandlerUtil.getActiveShellChecked(event);
 		LoginPage login = new LoginPage(shell);
 		
-		 if (login.open() == Window.OK) {
+		 if (login.open() == Window.OK) {			 
+			 
+			 String username = login.getUser();
+			 String password = login.getPassword();
+			 
+			 if(loginCheck(username, password)){
+				 System.out.println("credential match");
+			 }
+			 else {
+				 System.out.println("credential unmatch");
+			 }
 			 
 			 //when clicked OK check the authentication
 			 
@@ -51,5 +62,44 @@ public class JoinDiscussionHandler extends AbstractHandler{
 		return null;
 	}
 
+	private  boolean loginCheck(String username, String password){
+        String query;
+        String dbUsername, dbPassword;
+        boolean login = false;
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306?useSSL=false/ubcollaberation", "root", "admin");
+            Statement stmt = (Statement) con.createStatement();
+            query = "SELECT username, password FROM login;";
+            stmt.executeQuery(query);
+            ResultSet rs = stmt.getResultSet();
+
+            
+            
+            while(rs.next()){
+                dbUsername = rs.getString("username");
+                dbPassword = rs.getString("password");
+
+                if(dbUsername.equals(username) && dbPassword.equals(password)){
+                   login = true;
+                }
+            }
+            con.close();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        
+        return login;
+    
 }
+	
+}
+
 

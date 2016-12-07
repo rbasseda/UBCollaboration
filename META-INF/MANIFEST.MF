@@ -12,3 +12,5 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Export-Package: edu.bridgeport.cs441.collaborator.developermanagement.handlers,
  ubcollaboration
+Bundle-ClassPath: mysql-connector-java-5.1.40-bin.jar,
+ .

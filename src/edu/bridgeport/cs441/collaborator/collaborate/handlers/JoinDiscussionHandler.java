@@ -69,7 +69,7 @@ public class JoinDiscussionHandler extends AbstractHandler{
 
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306?useSSL=false/ubcollaberation", "root", "admin");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ubcollaberation", "root", "admin");
             Statement stmt = (Statement) con.createStatement();
             query = "SELECT username, password FROM login;";
             stmt.executeQuery(query);

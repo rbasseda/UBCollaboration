@@ -46,7 +46,7 @@ public class AddDeveloperHandler extends AbstractHandler {
 		
 	public Object execute(ExecutionEvent event) throws ExecutionException{
 			Shell shell = HandlerUtil.getActiveShellChecked(event);
-			LoginPage login = new LoginPage(shell);
+			MemberLogin login = new MemberLogin(shell);
 			
 			 if (login.open() == Window.OK) {			 
 				 

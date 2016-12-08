@@ -28,7 +28,7 @@ public class LoginPage extends Dialog {
     private String password = "";
 	
     
-	protected LoginPage(Shell parentShell) {
+	public LoginPage(Shell parentShell) {
 		super(parentShell);
 		// TODO Auto-generated constructor stub
 	}

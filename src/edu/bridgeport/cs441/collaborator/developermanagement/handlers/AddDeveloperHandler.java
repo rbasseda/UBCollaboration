@@ -20,13 +20,18 @@ import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.handlers.HandlerUtil;
-import org.eclipse.jface.dialogs.MessageDialog;
 
+import edu.bridgeport.cs441.collaborator.collaborate.handlers.*;
+
+import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.jface.window.Window;
+import org.eclipse.swt.widgets.Shell;
+import edu.bridgeport.cs441.collaborator.collaborate.handlers.*;
 
 /**
  * Our sample handler extends AbstractHandler, an IHandler base class.
  * 
- * @author Reza Basseda
+ * @author Reza Basseda, Tejas Surve
  * 
  * 
  * @see org.eclipse.core.commands.IHandler
@@ -35,21 +40,25 @@ import org.eclipse.jface.dialogs.MessageDialog;
 public class AddDeveloperHandler extends AbstractHandler {
 
 	@Override
-	public Object execute(ExecutionEvent event) throws ExecutionException {
-		IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindowChecked(event);
 		
 		//TODO: You have to complete this code
 		//TODO: Decide about the number of command we need
 		
-		MessageDialog.openInformation(
-				window.getShell(),
-				"UBCollaboration: Course project of CS441",
-				"Write add user code here");
-		return null;
+	public Object execute(ExecutionEvent event) throws ExecutionException{
+			Shell shell = HandlerUtil.getActiveShellChecked(event);
+			LoginPage login = new LoginPage(shell);
+			
+			 if (login.open() == Window.OK) {			 
+				 
+				 String username = login.getUser();
+				 String password = login.getPassword();
+				 
+		
+		
 	}
+	return null;
 	
 	
-	
-	
+	}
 	
 }

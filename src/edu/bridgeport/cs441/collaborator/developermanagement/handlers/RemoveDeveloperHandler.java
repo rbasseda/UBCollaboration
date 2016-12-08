@@ -13,7 +13,7 @@ import org.eclipse.ui.handlers.HandlerUtil;
 /**
  * This class is handling the remove user requests.
  * 
- * @author Reza Basseda
+ * @author Reza Basseda, Tejas Surve
  * 
  * 
  * @see org.eclipse.core.commands.IHandler

@@ -5,5 +5,23 @@
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Spring Library"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.annotation_1.1.100.v20160418-1457.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.annotation_2.1.0.v20160418-1457.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.apt.core_3.4.100.v20160525-0952.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.apt.pluggable.core_1.1.100.v20160418-1457.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.apt.ui_3.4.100.v20160418-1457.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.compiler.apt_1.2.100.v20160418-1457.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.compiler.tool_1.1.100.v20160418-1457.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.core.manipulation_1.7.0.v20160419-0705.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.core_3.12.0.v20160516-2131.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.debug.ui_3.7.200.v20160423-1519.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.doc.user_3.12.0.v20160601-2148.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.junit.core_3.8.0.v20160421-1701.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.junit.runtime_3.4.600.v20160505-0715.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.junit_3.9.0.v20160421-1701.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.junit4.runtime_1.1.600.v20160505-0715.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.launching_3.8.100.v20160505-0636.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt.ui_3.12.0.v20160525-1829.jar"/>
+	<classpathentry kind="lib" path="C:/eclipse/java-neon/eclipse/plugins/org.eclipse.jdt_3.12.0.v20160606-1100.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
